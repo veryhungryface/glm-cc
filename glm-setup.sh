@@ -14,7 +14,7 @@ echo "✅ 디렉토리 생성: $CLAUDE_DIR"
 
 # 2. .env_glm 파일 생성
 cat > "$ENV_FILE" << 'EOF'
-GLM_API_KEY=3bda401e069f4768b7edef75be03ad61.Lm5jmR9TNZxCs5kH
+GLM_API_KEY=your GLM api key
 EOF
 echo "✅ API 키 파일 생성: $ENV_FILE"
 
