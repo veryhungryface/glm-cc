@@ -34,12 +34,6 @@ notepad $PROFILE
 . $HOME\.claude\glm-claude-alias.ps1
 ```
 
-### 3. 사용
-```powershell
-glm      # GLM4.7 모델로 Claude Code 실행
-claude   # 일반 Claude Code (구독 버전) 실행
-```
-
 ---
 
 ## 🐧 WSL/Linux (Bash) 설치
@@ -78,17 +72,6 @@ GLM_API_KEY=your_api_key_here
 
 ---
 
-## ⚙️ 동작 원리
-
-`glm` 명령어 실행 시:
-1. `.env_glm`에서 API 키 로드
-2. 환경변수 설정:
-   - `ANTHROPIC_AUTH_TOKEN` = API 키
-   - `ANTHROPIC_BASE_URL` = `https://api.z.ai/api/anthropic`
-3. Claude Code 실행
-4. 종료 시 환경변수 자동 정리
-
----
 
 ## 📌 참고 사항
 
@@ -99,6 +82,7 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
 
 
 
