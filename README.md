@@ -44,17 +44,9 @@ claude   # 일반 Claude Code (구독 버전) 실행
 
 ## 🐧 WSL/Linux (Bash) 설치
 
-### 1. 설치 스크립트 실행
+### 원라인 설치 (권장)
 ```bash
-# 스크립트가 있는 폴더로 이동
-cd "/mnt/c/Users/TY/Downloads/새 폴더"
-
-# 설치 실행 (자동으로 모든 설정 완료)
-bash glm-setup.sh
-
-# 설정 적용
-source ~/.bashrc
-```
+curl -fsSL [https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-setup.sh](https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-setup.sh) | bash && source ~/.bashrc
 
 ### 2. 사용
 ```bash
@@ -104,3 +96,4 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
