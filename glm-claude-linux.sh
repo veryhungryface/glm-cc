@@ -1,5 +1,5 @@
 #!/bin/bash
-# GLM Claude Code Setup Script for WSL
+# GLM Claude Code Setup Script for Linux
 
 CLAUDE_DIR="$HOME/.claude"
 ENV_FILE="$CLAUDE_DIR/.env_glm"
