@@ -47,10 +47,13 @@ claude   # 일반 Claude Code (구독 버전) 실행
 ### 원라인 설치 (권장)
 ```bash
 curl -fsSL [https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-setup.sh](https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-setup.sh) | bash && source ~/.bashrc
+```
 
 ### 2. 사용
 ```bash
 glm      # GLM4.7 모델로 Claude Code 실행
+```
+```bash
 claude   # 일반 Claude Code (구독 버전) 실행
 ```
 
@@ -96,4 +99,5 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
 
