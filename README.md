@@ -5,6 +5,15 @@ PowerShell(Windows)과 WSL(Linux/Bash) 환경 모두 지원합니다.
 
 ---
 
+## ⚠️ 사전 요구사항
+> **Claude Code**가 먼저 설치되어 있어야 합니다.
+### Claude Code 설치 (WSL/Linux/macOS)
+```bash
+curl -fsSL [https://claude.ai/install.sh](https://claude.ai/install.sh) | bash
+```
+
+---
+
 ## 📦 파일 구성
 
 | 파일 | 용도 |
@@ -84,6 +93,7 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
 
 
 
