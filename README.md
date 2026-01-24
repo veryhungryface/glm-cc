@@ -43,6 +43,8 @@ notepad $PROFILE
 curl -fsSLo /tmp/g.sh https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-cc-install-linux.sh && bash /tmp/g.sh && source ~/.bashrc
 ```
 
+---
+
 ## ⌨️ 사용
 ```bash
 glm      # GLM 모델로 Claude Code 실행
@@ -82,6 +84,7 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
 
 
 
