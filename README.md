@@ -26,28 +26,13 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 ## 🖥️ PowerShell (Windows) 설치
 
-### 1. 파일 복사
 ```powershell
-# .claude 폴더 생성 및 파일 복사
-mkdir ~\.claude -Force
-Copy-Item .env_glm ~\.claude\
-Copy-Item glm-cc-win.ps1 ~\.claude\
+iwr https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-cc-install-win.ps1 -OutFile $env:TEMP\i.ps1; & $env:TEMP\i.ps1
 ```
-
-### 2. PowerShell 프로필에 추가
-```powershell
-# 프로필 파일 열기
-notepad $PROFILE
-
-# 아래 내용 추가 후 저장
-. $HOME\.claude\glm-cc-win.ps1
-```
-
 ---
 
 ## 🐧 WSL/Linux (Bash) 설치
 
-### 원라인 설치 (권장)
 ```bash
 curl -fsSLo /tmp/g.sh https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-cc-install-linux.sh && bash /tmp/g.sh && source ~/.bashrc
 ```
@@ -93,6 +78,7 @@ GLM_API_KEY=your_api_key_here
 ---
 
 🎉 이제 `glm`과 `claude`를 자유롭게 사용하세요!
+
 
 
 
