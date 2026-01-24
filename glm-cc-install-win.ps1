@@ -18,13 +18,13 @@ if ([string]::IsNullOrEmpty($apiKey)) {
 Write-Host "✅ API 키 저장 완료" -ForegroundColor Green
 
 # 3. alias 스크립트 다운로드
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-claude-win.ps1" -OutFile "$claudeDir\glm-claude-win.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/veryhungryface/glm-cc/main/glm-cc-win.ps1" -OutFile "$claudeDir\glm-cc-win.ps1"
 Write-Host "✅ 스크립트 다운로드 완료" -ForegroundColor Green
 
 # 4. PowerShell 프로필에 등록
 if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force | Out-Null }
-if (!(Select-String -Path $PROFILE -Pattern "glm-claude-win" -Quiet)) {
-    Add-Content -Path $PROFILE -Value "`n. `$HOME\.claude\glm-claude-win.ps1"
+if (!(Select-String -Path $PROFILE -Pattern "glm-cc-win" -Quiet)) {
+    Add-Content -Path $PROFILE -Value "`n. `$HOME\.claude\glm-cc-win.ps1"
     Write-Host "✅ 프로필에 등록 완료" -ForegroundColor Green
 } else {
     Write-Host "⚠️ 이미 프로필에 등록되어 있습니다" -ForegroundColor Yellow
