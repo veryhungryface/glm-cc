@@ -1,6 +1,5 @@
 #!/bin/bash
 # GLM Claude Code Setup Script for WSL
-# 이 스크립트를 실행하면 자동으로 설치됩니다.
 
 CLAUDE_DIR="$HOME/.claude"
 ENV_FILE="$CLAUDE_DIR/.env_glm"
@@ -12,11 +11,17 @@ echo "🚀 GLM Claude Code 설치 시작..."
 mkdir -p "$CLAUDE_DIR"
 echo "✅ 디렉토리 생성: $CLAUDE_DIR"
 
-# 2. .env_glm 파일 생성
-cat > "$ENV_FILE" << 'EOF'
-GLM_API_KEY=your GLM api key
-EOF
-echo "✅ API 키 파일 생성: $ENV_FILE"
+# 2. API 키 입력받아 .env_glm 파일에 저장
+echo ""
+read -p "🔑 GLM_API_KEY를 입력하세요: " GLM_API_KEY
+
+if [ -z "$GLM_API_KEY" ]; then
+    echo "❌ API 키가 입력되지 않았습니다. 설치를 중단합니다."
+    exit 1
+fi
+
+echo "GLM_API_KEY=$GLM_API_KEY" > "$ENV_FILE"
+echo "✅ API 키 저장 완료: $ENV_FILE"
 
 # 3. glm 함수를 .bashrc에 추가 (중복 방지)
 if grep -q "# GLM Claude Code Function" "$BASHRC" 2>/dev/null; then
